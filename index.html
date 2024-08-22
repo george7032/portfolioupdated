@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="function.js" language="javascript"></script>
+    <title>George Kimani</title>
+</head>
+<body>
+    <header>
+    <a href="#" class="logo" >PortFolio</a>
+    <div class="toggle" onclick="toggleMenu();"></div>
+    <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services"onclick="toggleMenu();" >Services</a></li>
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <!--<li><a href="#testimonial" onclick="toggleMenu();">Testimonial</a></li> -->
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+    </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>Hello, I'm <br><span> George Kimani</span>  </h2>
+            <h3>I'm a Full Stack Web Developer.</h3>
+            <a href="#about" class="btn">About Me</a>
+        </div>
+
+    </section>
+    <section class="about"  id="about">
+        <div class="heading">
+            <p>Get to Know Me</p>
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="w50">
+                <img src="images/kimani.png" alt="" class="proPic"> 
+            </div>
+            <div class="contentBx w50">
+                <h3>Who am I? </h3>
+                <h2>I'm <b>George Kimani</b>, a full stack web developer and a web designer</h2>
+
+                <br>
+                <p>As a skilled full-stack developer, I have experience working with various programming languages such as HTML, CSS, JavaScript, Python, and PHP. I've also worked extensively with popular content management systems like WordPress and Drupal, and I'm well-versed in database management systems like MySQL and MongoDB.</p>
+                <br>
+                <p>In addition to my technical skills, I have a keen eye for design and user experience. I strive to create websites that are not only functional but also aesthetically pleasing and easy to navigate. I'm also a strong communicator and collaborator, working closely with designers and project managers to ensure that the end result meets the client's needs and exceeds their expectations.</p>
+                <br>
+                <p>I'm passionate about keeping up with the latest trends and technologies in web development and I'm always eager to learn new skills. In my free time, I enjoy attending hackathons and participating in open-source projects.</p>
+                <div class="heading bottom">
+                    <a href="images/resume.pdf" target="_blank" class="btn round">Download CV</a>
+                    <div class="bt">
+                        <b>Name:</b> George Kimani Ndung'u <br>
+                        <b>Age:</b> 23
+                    </div>
+                    <div class="bt">
+                        <b>Email:</b> georgendungu618@gmail.com <br>
+
+                        <b>Location: </b> Nairobi, Kenya.
+                    </div>
+                </div>
+
+            </div>            
+        </div>
+
+    </section>
+    <!--Services -->
+    <section class="services" id="services">
+        <div class="heading white">
+            <h2>My Services</h2>
+            <p>Services I Offer to my Clients</p>
+
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <h3>Front-End Development</h3><br>
+                <ul>
+                    <li>HTML  &nbsp &nbsp<img src="iMAGES/devImages/html.png" length="10px" width="20px"></li><br>
+                    <li>CSS  &nbsp &nbsp<img src="iMAGES/devImages/css.png" length="10px" width="20px"></li><br>
+                    <li>Javascript  &nbsp &nbsp<img src="iMAGES/devImages/js.png" length="10px" width="20px"></li><br>
+                    <li>React  &nbsp &nbsp<img src="iMAGES/devImages/reactJs.jpeg" length="10px" width="20px"></li><br>
+                    <li>Angular  &nbsp &nbsp<img src="iMAGES/devImages/angular.jpeg" length="10px" width="20px"></li><br>
+                </ul>
+            </div>
+            <div class="servicesBx">
+                <h3>Back-end Development</h3><br>
+                <ul>
+                    <li>Python  &nbsp &nbsp<img src="iMAGES/devImages/python.jpeg" length="10px" width="20px"></li><br>
+                    <li>PHP  &nbsp &nbsp<img src="iMAGES/devImages/php.png" length="10px" width="20px"></li><br>
+                    <li>Ruby  &nbsp &nbsp<img src="iMAGES/devImages/ruby.png" length="10px" width="20px"></li><br>
+                    <li>Node.js  &nbsp &nbsp<img src="iMAGES/devImages/node.png" length="10px" width="20px"></li><br>
+                </ul>
+            </div>
+            <div class="servicesBx">
+                <h3>Data Base</h3><br>
+                <ul>
+                    <li>MySQL &nbsp &nbsp<img src="iMAGES/devImages/mysql.png" length="10px" width="20px"></li><br>
+                    <li>PostgreSQL &nbsp &nbsp<img src="iMAGES/devImages/postgresql.png" length="10px" width="20px"></li><br>
+                    <li>MongoDB &nbsp &nbsp<img src="iMAGES/devImages/mongo.jpg" length="10px" width="20px"></li><br>
+                    <li>Redis &nbsp &nbsp<img src="iMAGES/devImages/redis.png" length="10px" width="20px"></li><br>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="heading">
+            <h2>My Projects</h2>
+            <p>Explore some of the projects I've worked on.</p>
+        </div>
+        <div class="projects-container">
+            <div class="project">
+                <img src="images/ticketing.PNG" alt="Technical University of Kenya Ticketing System">
+                <h3><a href="https://github.com/george7032/ticketing" target="_blank">Technical University of Kenya <br>
+                    Ticketing System</h3>
+                <p>Technologies: HTML, CSS, JavaScript, PHP, MySQL</p>
+            </div>
+            <div class="project">
+                <img src="images/database.PNG" alt="Zebra Database">
+                <h3><a href="https://github.com/george7032/zebra-database" target="_blank">Zebra Database</a></h3>
+                <p>Technologies: MySQL</p>
+            </div>
+            <div class="project">
+                <img src="images/tenant.PNG" alt="Tenant Management System">
+                <h3><a href="https://github.com/george7032/final-copy" target="_blank">Tenant Management System</a></h3>
+                <p>Technologies: PHP, MySQL, HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project">
+                <img src="images/animated login.PNG" alt="Animated Login Page Project">
+                <h3><a href="https://github.com/george7032/animated_login_page" target="_blank">Animated Login Page</a></h3>
+                <p>Technologies: HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project">
+                <img src="images/colorado.PNG" alt="Colorado Project">
+                <h3><a href="https://github.com/george7032/colorado" target="_blank">Colorado</a></h3>
+                <p>Technologies: HTML, CSS, JavaScript</p>
+            </div>
+            <div class="project">
+                <img src="images/tableau-project.png" alt="Tableau Project">
+                <h3><a href="https://github.com/george7032/tableau-project" target="_blank">Tableau Project</a></h3>
+                <p>Technologies: Tableau</p>
+            </div>
+            <div class="project">
+                <img src="images/school.PNG" alt="School Fees System">
+                <h3><a href="https://github.com/george7032/school" target="_blank">School Fees System</a></h3>
+                <p>Technologies: PHP, SQL</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact section-->
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <p>Feel free to contact me</p>
+            <h2>Get in Touch</h2>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <p>Always available for freelance work if the right project comes along. 
+                    Feel free to contact me!</p>
+                    <div class="contactInfoBx">
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/address.png" width="20px">                                         
+                            </div>
+                            <div class="text">
+                                <h3>Address</h3>
+                                <address>
+                                    George Kimani <br>
+                                    77 01004 <br>
+                                    Thika <br>
+                                    Kenya.
+
+                                </address>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/phone.png" alt="" width="20px">
+                                <source>
+                                         
+                            </div>
+                            <div class="text">
+                                <h3>Phone No: </h3>
+                                <p>+254707-165-508</p>
+                                
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <img src="images/email.jpeg" alt="" width="20px">
+                                         
+                            </div>
+                            <div class="text">
+                                <h3>Email Address</h3>
+                                <p>georgendungu618@gmail.com</p>
+                                
+                            </div>
+                        </div>
+                        <br>
+                        <h3>Social Connect</h3>
+                        <div class="boxSocial">
+                            <div class="icon">
+
+                                <a href="https://www.facebook.com/george.ndungu.161446/" target="_blank" width="20px"><img src="images/facebook.png"  width="20px">
+
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.linkedin.com/in/george-kimani-13152a19b/" target="_blank">
+                                    <img src="images/linkedin.jpg" width="20px">
+                                    
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://twitter.com/George11353278" target="_blank"><img src="images/twitter.png"  width="20px">
+                                    
+                                </a>
+                            </div>
+                            <div class="icon">
+                                <a href="https://www.instagram.com/_jebezuh/" target="_blank">
+                                    <img src="images/instagram.jpeg"  width="20px">
+                                    
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3>Message Me</h3>
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                    <textarea class="formTextArea" rows="6" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <!--Footer-->
+    <footer class="copyright">
+        <p>&copy;2023 unclekim.onrender.com All RIghts reserved</p>
+    </footer>
+</body>
+</html>

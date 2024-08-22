@@ -1,0 +1,561 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior:smooth;
+}
+
+section{
+    padding: 80px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:black;
+    background-image: url(images/5.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.banner h2{
+    font-size: 2.5em;
+    color:white;
+    font-weight: 300;
+    line-height: 1.5em ;
+}
+
+.banner h2 span{
+    font-size: 1.2em;
+    color: white;
+}
+
+.banner h3 {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.btn {
+    position: relative;
+    background: rgb(9, 9, 58);
+    display: inline-block;
+    color: whitesmoke;
+    margin-top: 10px;
+    padding:10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+
+.heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+
+}
+
+.heading p{
+    font-style: italic;
+    font-size: 14px;
+
+}
+
+.heading h2{
+    font-size: 3em;
+    color: rgb(9, 9, 58);;
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.contentBx{
+    padding-left: 40px;
+    justify-content: space-between;
+
+}
+
+.proPic{
+    width:300px;
+    height:350px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 10%;
+
+}
+
+.contentBx h2{
+    font-weight: 300;
+    margin-bottom: 10px;
+
+}
+
+.heading.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+.btn.round{
+    border-radius: 50px;
+
+}
+
+.bt {
+    margin-top: 20px;
+}
+
+.w50 {
+    min-width: 25%;
+}
+
+img{
+    max-width: 100%;    
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(36, 27, 66);
+    width: 100%;
+    height: 50px;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: 0.8s ;
+}
+.about{
+    background-color: rgb(244, 250, 250);
+}
+header .logo{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+
+}
+
+header ul li{
+    list-style-type:none;
+    position: relative;
+
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+    text-decoration: none;
+    color: white;
+
+}
+
+header.sticky {
+    background: white;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+header.sticky.logo,
+header.sticky ul li a{
+    color: black;
+    
+
+}
+
+.services{
+    background-color: rgb(166, 166, 182) ;
+
+}
+.heading.white p{
+    color: rgb(9, 9, 58);
+
+}
+
+.services.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+
+.services .content .servicesBx{
+    color: white;
+    background: rgb(9, 9, 58);
+    margin: 10px 15px;
+    padding: 30px 30px;
+    text-align: center;
+    max-width: 70%;
+
+
+}
+
+.services .content .servicesBx:hover{
+
+border-bottom: 4px solid rgb(105, 105, 231);
+
+}
+.services .content .servicesBx ul li{
+    list-style-type: none;
+}
+
+.contact{
+    background: rgb(208, 208, 214);
+
+
+}
+.formBx{
+    min-width: 60%;
+
+}
+.formBx form{
+    display:flex;
+    flex-direction: column;
+}
+
+.formBx form h3, 
+.contactInfo h3{
+    color: rgb(9, 9, 58);
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px;
+
+}
+.content .contactInfo p{
+    color: rgb(9, 9, 58);
+} 
+.formBx form input{
+    margin-bottom:20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: white;
+    color: black ;
+    resize: vertical;
+
+}
+
+.formTextArea{
+    margin-bottom:20px;
+    padding: 15px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    resize: vertical;
+    height: 70px;
+
+}
+.formBx form input:focus,
+.formTextArea form input:focus{
+    border-bottom: 3px solid white;
+    transition: 0.5s;
+}
+.formBx form input ::placeholder,
+.formTextArea ::placeholder{
+    color: green;
+}
+.formBx form input[type="submit"]{
+    background-color: rgb(9, 9, 58);
+    color:white;
+    max-width: 250px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 50px;
+
+}
+.contactInfo{
+    min-width: 40%;
+
+}
+
+.contactInfo p {
+    color: white;
+
+}
+.contactInfoBx {
+    position: relative;
+
+}
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon{
+    padding-top: 4px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+
+}
+
+.contactInfoBx .box .text{
+    color: rgb(9, 9, 58);
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300; 
+}
+
+.contactInfoBx .box .text h3{
+    color: rgb(9, 9, 58);
+    font-weight: 500;
+    margin: 0;
+
+}
+
+.contactInfoBx .box .text p, address{
+    font-style:normal;
+    font-weight: 300;
+    color: black;
+
+}
+
+.contactInfoBx .boxSocial{
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+    letter-spacing: 40px;    
+
+}
+
+footer.copyright{
+    background: rgb(9, 9, 58);
+    color: white;
+    padding: 10px;
+    margin-bottom: 0%;
+    text-align: center;
+    height: 50px;
+
+}
+
+
+@media (max-width: 991px)
+{
+    header,
+    header.sticky {
+        padding: 20px 50px;
+    }
+    header .menu{
+        display: none;
+    }
+    header .menu{
+        position: fixed;
+        background: rgb(9, 9, 58);
+        display:block;
+        top: 75px;
+        left: -100%;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        border-top: 1px solid rgb(9, 9, 58);
+        transition: 0.5s;
+
+    }
+
+    header ul li a{
+        font-size: 20px;
+        color: white;
+        font-weight: 400;
+        margin: 10px 0px;
+    }
+    .toggle{
+         width: 40px;
+         height: 40px;
+         background-image:url(images/menu.png);
+         background-repeat: no-repeat;
+         background-size:30px;
+         color: white;
+         
+    }
+    .toggle.active{
+        width: 40px;
+        height:40px;
+        background-image:url(images/close.png);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    header .menu.active{
+        position: fixed;
+        background: rgb(9, 9, 58);
+        display:block;
+        top: 75px;
+        left:0;
+        padding: 100px 50px;
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+    }
+    section{
+        padding: 100px 30px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+        color: white;
+
+
+    }
+    .banner h3{
+        font-size: 1em;
+        color: white;
+    }
+    .banner h2 span{
+        color: white;
+    }
+    
+    .textBx{
+        position: relative;
+        top: 170px;
+
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 50px;
+
+    }
+
+    .content{
+        flex-direction: column;
+    }
+    .contentBx{
+        padding: 0;
+    }
+    .contentBx h2{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .contentBx h3{
+        font-size: 20px;
+    }
+    .content .w50 img{
+        display: block;
+        margin: 0 auto 30px auto;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .content .serviceBx{
+        display: block;
+        flex-direction: column;
+    }
+}
+
+
+
+/*Projects*/
+
+.projects {
+    background-color: #f4f4f4;
+    padding: 80px 0;
+}
+
+.projects .heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.projects .heading h2 {
+    font-size: 2.5em;
+    color: #3498db;
+}
+
+.projects .heading p {
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.project {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #3498db;
+}
+
+.project h3 {
+    margin: 20px 0 10px;
+    font-size: 1.5em;
+    color: #3498db;
+}
+
+.project h3 a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.project h3 a:hover {
+    text-decoration: underline;
+}
+
+.project p {
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
